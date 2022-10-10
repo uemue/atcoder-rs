@@ -7,11 +7,8 @@ use superslice::*;
 
 fn main() {
     input! {
-        a: i64,
-        b: i64,
-        c: i64,
-        d: i64,
+        n:usize
     }
 
-    println!("{}", a * d - b * c);
+    println!("{:02X}", n);
 }
