@@ -7,11 +7,13 @@ use superslice::*;
 
 fn main() {
     input! {
-        a: i64,
-        b: i64,
-        c: i64,
-        d: i64,
+        n: usize,
+        q: usize,
+        l: [[u64];n],
+        k: [(Usize1, Usize1);q]
     }
 
-    println!("{}", a * d - b * c);
+    for (s, t) in k {
+        println!("{}", l[s][t]);
+    }
 }
